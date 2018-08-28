@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 import { reduxForm, Field } from 'redux-form';
 import addItem  from './actions/item';
 import addItemsReducer from './reducers/itemReducer';
+import image from './GitHub-Mark-32px.png' ;
 
 let AddForm = props =>{
   const { handleSubmit } = props;
@@ -103,6 +104,16 @@ class WrapperApp extends Component {
           </ListGroup>
         </ul>
         <Total item={this.props.addItemsReducer.details}/>
+        <footer>
+          <p>
+          A React-Redux app built with Redux-form </p>
+          <p>Link to the repository below</p>
+          <a href="https://github.com/MelroySanthmayor/testapp">
+           <img src={image} />
+          </a>
+          
+          
+        </footer>
       </div>
     );
   }
