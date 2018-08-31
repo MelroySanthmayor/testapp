@@ -12,15 +12,15 @@ let AddForm = props =>{
   return (<Form inline onSubmit={handleSubmit}>
   <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
     <Label for="exampleEmail" className="mr-sm-2">Product</Label>
-    <Field className="input" name="product" component="input" type="text" placeholder="Enter name of Product"/>
+    <Field className="input" name="product" component="input" type="text" placeholder="Enter name of Product" required/>
   </FormGroup>
   <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
     <Label for="examplePassword" className="mr-sm-2">Qty</Label>
-    <Field className="input" name="qty" component="input" type="number" placeholder="Enter the Quantity"/>
+    <Field className="input" name="qty" component="input" type="number" placeholder="Enter the Quantity" min="0" required/>
   </FormGroup>
   <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
     <Label for="examplePassword" className="mr-sm-2">Price</Label>
-    <Field className="input" name="price" component="input" type="number" placeholder="Enter Price"/>
+    <Field className="input" name="price" component="input" type="number" placeholder="Enter Price" min="0" step=".01" required />
   </FormGroup>
   <Button>Submit</Button>
   </Form>);
