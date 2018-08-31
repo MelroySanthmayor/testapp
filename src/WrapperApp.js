@@ -157,7 +157,7 @@ const Total = ({ item }) => (
       <h3>{sum+=eval(item[itm].price* item[itm].qty)}</h3>
     
     ))*/}
-    {total = Object.values(item).reduce((t, n) => t + (n.price*n.qty), 0)}
+    {total = Object.values(item).reduce((t, n) => t + (n.price*n.qty), 0).toFixed(2)}
 
   </h5>
 )
