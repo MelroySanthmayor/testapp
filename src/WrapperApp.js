@@ -79,7 +79,7 @@ class WrapperApp extends Component {
         </Navbar>
         <AddForm onSubmit={this.handleSubmit.bind(this)}/>
         <Container>
-          <Row>
+          <Row className="Col">
             <Col><h3>Product</h3></Col>
             <Col><h3>Quantity</h3></Col>
             <Col><h3>Price</h3></Col>
@@ -92,7 +92,7 @@ class WrapperApp extends Component {
           {Object.keys(this.props.addItemsReducer.details).map((item,i)=>(
             <ListGroupItem className='Li' key={i}>
               <Container>
-                <Row>
+                <Row className="Col">
                   <Col>{this.props.addItemsReducer.details[item].product}</Col>
                   <Col>{this.props.addItemsReducer.details[item].qty}</Col>
                   <Col>{this.props.addItemsReducer.details[item].price}</Col>
