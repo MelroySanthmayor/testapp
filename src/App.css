@@ -6,7 +6,7 @@ ul{
   background-color: grey;
 }
 h5{
-  margin-left:70%;
+  margin-left:71.5%;
 }
 .form-inline{
   margin-left: 18%;
@@ -36,4 +36,7 @@ p{
   padding-top:25px;
   padding-bottom:0;
   margin-bottom:0;
+}
+.Col{
+  text-align:center;
 }
